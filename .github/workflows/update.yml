@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          wget 'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/new.txt'
+          wget 'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/ultrafast.txt'
           pip install requests black wheel fake-headers
       - name: Run
         run: |
