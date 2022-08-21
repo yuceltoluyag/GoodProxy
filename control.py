@@ -81,7 +81,7 @@ def clean_exe_temp(folder):
 def load_proxy():
     proxies = []
 
-    filename = "ultrafast.txt"
+    filename = "premium.txt"
 
     if not os.path.isfile(filename) and filename[-4:] != ".txt":
         filename = f"{filename}.txt"
