@@ -3,7 +3,7 @@ name: Refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '0 22 * * 1-5'
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          wget -q 'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/all.txt' -O all.txt
+          wget -q 'https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/raw.txt' -O raw.txt
           pip install requests black wheel fake-headers
       - name: Run
         run: |
